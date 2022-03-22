@@ -11,8 +11,11 @@ GOTO Loop
 :Continue
 EXIT
 
+: Mise a jour
+start  /wait "%~dp0\git\mingw32\bin\git.exe" pull
+
 :TeamViewer
-ECHO Veuillez patienter, l'assistance ne va pas tarder … d‚marrer, nous v‚rifions et nous fermons les autres instances de TeamViewer.
+ECHO Veuillez patienter, l'assistance ne va pas tarder â€¦ dâ€šmarrer, nous vâ€šrifions et nous fermons les autres instances de TeamViewer.
 START /B /WAIT %SystemRoot%\System32\taskkill.exe /F /im teamviewer.exe > NUL 2>&1
 
 .\TeamViewerQS.exe
