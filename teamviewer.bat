@@ -13,7 +13,7 @@ EXIT
 
 :TeamViewer
 ECHO Veuillez patienter.
-ECHO Vérification des mises à jour.
+ECHO Verification des mises a jour.
 start /B /wait %~dp0\git\mingw32\bin\git.exe pull
 ECHO L'assistance ne va pas tarder à démarrer, nous vérifions et nous fermons les autres instances de TeamViewer ...
 START /B /WAIT %SystemRoot%\System32\taskkill.exe /F /im teamviewer.exe > NUL 2>&1
