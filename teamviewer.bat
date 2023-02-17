@@ -12,7 +12,7 @@ GOTO Loop
 EXIT
 
 :TeamViewer
-ECHO Verification des mises à jour.
+ECHO Verification des mises a jour.
 
 start /B /wait %~dp0\git\mingw32\bin\git.exe pull
 ECHO Chargement en cours, veuillez patienter.
